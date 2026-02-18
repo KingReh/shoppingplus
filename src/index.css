@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -17,8 +13,8 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -26,63 +22,120 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 142 76% 36%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Category colors */
+    --category-hortifruti: 120 60% 45%;
+    --category-hortifruti-fg: 0 0% 100%;
+
+    --category-acougue: 0 72% 51%;
+    --category-acougue-fg: 0 0% 100%;
+
+    --category-frios: 200 80% 52%;
+    --category-frios-fg: 0 0% 100%;
+
+    --category-padaria: 35 90% 55%;
+    --category-padaria-fg: 0 0% 100%;
+
+    --category-mercearia: 25 80% 50%;
+    --category-mercearia-fg: 0 0% 100%;
+
+    --category-bebidas: 220 70% 50%;
+    --category-bebidas-fg: 0 0% 100%;
+
+    --category-congelados: 195 80% 48%;
+    --category-congelados-fg: 0 0% 100%;
+
+    --category-limpeza: 280 60% 55%;
+    --category-limpeza-fg: 0 0% 100%;
+
+    --category-higiene: 330 65% 55%;
+    --category-higiene-fg: 0 0% 100%;
+
+    --category-pet: 45 80% 50%;
+    --category-pet-fg: 0 0% 100%;
+
+    --category-bomboniere: 320 55% 55%;
+    --category-bomboniere-fg: 0 0% 100%;
+
+    --category-utilidades: 160 55% 42%;
+    --category-utilidades-fg: 0 0% 100%;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 222 28% 8%;
+    --foreground: 210 40% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 222 25% 12%;
+    --card-foreground: 210 40% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 222 25% 12%;
+    --popover-foreground: 210 40% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 142 70% 45%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary-foreground: 210 40% 95%;
 
     --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted-foreground: 215 20.2% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 142 70% 45%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 72% 51%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 217.2 32.6% 20%;
+    --input: 217.2 32.6% 20%;
+    --ring: 142 70% 45%;
+
+    /* Category colors dark */
+    --category-hortifruti: 120 55% 40%;
+    --category-hortifruti-fg: 0 0% 100%;
+    --category-acougue: 0 68% 46%;
+    --category-acougue-fg: 0 0% 100%;
+    --category-frios: 200 75% 47%;
+    --category-frios-fg: 0 0% 100%;
+    --category-padaria: 35 85% 50%;
+    --category-padaria-fg: 0 0% 100%;
+    --category-mercearia: 25 75% 45%;
+    --category-mercearia-fg: 0 0% 100%;
+    --category-bebidas: 220 65% 45%;
+    --category-bebidas-fg: 0 0% 100%;
+    --category-congelados: 195 75% 43%;
+    --category-congelados-fg: 0 0% 100%;
+    --category-limpeza: 280 55% 50%;
+    --category-limpeza-fg: 0 0% 100%;
+    --category-higiene: 330 60% 50%;
+    --category-higiene-fg: 0 0% 100%;
+    --category-pet: 45 75% 45%;
+    --category-pet-fg: 0 0% 100%;
+    --category-bomboniere: 320 50% 50%;
+    --category-bomboniere-fg: 0 0% 100%;
+    --category-utilidades: 160 50% 38%;
+    --category-utilidades-fg: 0 0% 100%;
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -101,5 +154,104 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior: none;
   }
 }
+
+@layer components {
+  .category-badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .fab {
+    @apply fixed bottom-24 right-4 w-14 h-14 rounded-full shadow-lg flex items-center justify-center z-30 transition-transform active:scale-95;
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+
+  .swipe-container {
+    @apply relative overflow-hidden;
+  }
+
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  .item-card {
+    @apply bg-card border border-border rounded-xl transition-all duration-200;
+  }
+
+  .item-card:active {
+    @apply scale-[0.99];
+  }
+
+  .list-card {
+    @apply bg-card border border-border rounded-2xl p-4 transition-all duration-200 cursor-pointer;
+  }
+
+  .list-card:active {
+    @apply scale-[0.98];
+  }
+
+  .mobile-header {
+    @apply sticky top-0 z-20 bg-background border-b border-border;
+  }
+
+  .bottom-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default focus outline on touch devices */
+@media (pointer: coarse) {
+  *:focus {
+    outline: none;
+  }
+}
+
+/* Category badge colors using CSS variables */
+.bg-category-hortifruti { background-color: hsl(var(--category-hortifruti)); }
+.text-category-hortifruti-fg { color: hsl(var(--category-hortifruti-fg)); }
+.bg-category-acougue { background-color: hsl(var(--category-acougue)); }
+.text-category-acougue-fg { color: hsl(var(--category-acougue-fg)); }
+.bg-category-frios { background-color: hsl(var(--category-frios)); }
+.text-category-frios-fg { color: hsl(var(--category-frios-fg)); }
+.bg-category-padaria { background-color: hsl(var(--category-padaria)); }
+.text-category-padaria-fg { color: hsl(var(--category-padaria-fg)); }
+.bg-category-mercearia { background-color: hsl(var(--category-mercearia)); }
+.text-category-mercearia-fg { color: hsl(var(--category-mercearia-fg)); }
+.bg-category-bebidas { background-color: hsl(var(--category-bebidas)); }
+.text-category-bebidas-fg { color: hsl(var(--category-bebidas-fg)); }
+.bg-category-congelados { background-color: hsl(var(--category-congelados)); }
+.text-category-congelados-fg { color: hsl(var(--category-congelados-fg)); }
+.bg-category-limpeza { background-color: hsl(var(--category-limpeza)); }
+.text-category-limpeza-fg { color: hsl(var(--category-limpeza-fg)); }
+.bg-category-higiene { background-color: hsl(var(--category-higiene)); }
+.text-category-higiene-fg { color: hsl(var(--category-higiene-fg)); }
+.bg-category-pet { background-color: hsl(var(--category-pet)); }
+.text-category-pet-fg { color: hsl(var(--category-pet-fg)); }
+.bg-category-bomboniere { background-color: hsl(var(--category-bomboniere)); }
+.text-category-bomboniere-fg { color: hsl(var(--category-bomboniere-fg)); }
+.bg-category-utilidades { background-color: hsl(var(--category-utilidades)); }
+.text-category-utilidades-fg { color: hsl(var(--category-utilidades-fg)); }
+
+/* Dot colors */
+.dot-hortifruti { background-color: hsl(var(--category-hortifruti)); }
+.dot-acougue { background-color: hsl(var(--category-acougue)); }
+.dot-frios { background-color: hsl(var(--category-frios)); }
+.dot-padaria { background-color: hsl(var(--category-padaria)); }
+.dot-mercearia { background-color: hsl(var(--category-mercearia)); }
+.dot-bebidas { background-color: hsl(var(--category-bebidas)); }
+.dot-congelados { background-color: hsl(var(--category-congelados)); }
+.dot-limpeza { background-color: hsl(var(--category-limpeza)); }
+.dot-higiene { background-color: hsl(var(--category-higiene)); }
+.dot-pet { background-color: hsl(var(--category-pet)); }
+.dot-bomboniere { background-color: hsl(var(--category-bomboniere)); }
+.dot-utilidades { background-color: hsl(var(--category-utilidades)); }
